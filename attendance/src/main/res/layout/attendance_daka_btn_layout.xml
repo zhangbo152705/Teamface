@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@drawable/attendance_daka_bg"
+                android:minHeight="210dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/action_btn2"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/attendance_gray_bg"
+            android:text="13:15:01"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_wifi_and_location_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/action_btn2"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp">
+
+            <ImageView
+                android:id="@+id/iv_state"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="42dp"
+                tools:src="@drawable/attendance_location_false"/>
+
+            <TextView
+                android:id="@+id/tv_location_and_wifi_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_state"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="14dp"
+                tools:text="已进入打卡范围:思创科技大厦…… "/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_complete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/iv_complete"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@color/red"/>
+
+                <TextView
+                    android:id="@+id/tv_complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/iv_complete"
+                    android:text="今天打卡已完成"
+                    android:textColor="@color/attendance_state_3"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_complete_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="考勤有异常，记得和领导说明原因！"
+                android:textColor="@color/attendance_333333"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

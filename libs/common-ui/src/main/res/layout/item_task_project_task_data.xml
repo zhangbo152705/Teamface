@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/task_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/project_item_task_background"
+              android:minHeight="70dp"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingEnd="10dp"
+              android:paddingStart="10dp"
+              android:paddingTop="10dp"
+              android:visibility="gone"
+              tools:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/project_task_item_check"/>
+
+        <TextView
+            android:id="@+id/tv_task_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/iv_check"
+            android:layout_toStartOf="@+id/iv_head"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/_323232"
+            android:textSize="@dimen/text_size_14"
+            tools:text="这里是任务这里是任务这里111111111111111"/>
+
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+
+
+    <com.hjhq.teamface.common.view.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="30dp">
+
+        <TextView
+            android:id="@+id/tv_complete_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/orange_f5"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone"
+            tools:text="1"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:background="#EEEEEE"
+            android:paddingBottom="2dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            android:textColor="#5c5c69"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone"
+            tools:text="截止时间  8月9日 12:30"/>
+
+        <TextView
+            android:id="@+id/tv_sub_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="7dp"
+            android:drawablePadding="2dp"
+            android:drawableStart="@drawable/project_small_icon_sub_task"
+            android:textColor="@color/gray_bb"
+            android:textSize="@dimen/text_size_12"
+            android:visibility="gone"
+            tools:text="23/56"/>
+    </com.hjhq.teamface.common.view.FlowLayout>
+
+
+    <com.hjhq.teamface.common.view.FlowLayout
+        android:id="@+id/flow_picklist_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</LinearLayout>

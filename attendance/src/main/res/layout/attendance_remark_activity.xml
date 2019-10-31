@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_app_backgroud_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                style="@style/attendance_ll">
+
+                <TextView
+                    style="@style/attendance_left"
+                    android:text="打卡时间"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/attendance_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line"/>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                style="@style/attendance_ll">
+
+                <TextView
+                    style="@style/attendance_left"
+                    android:text="打卡地点"/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/attendance_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line"/>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                style="@style/attendance_ll">
+
+                <TextView
+                    style="@style/attendance_left"
+                    android:text="打卡备注"/>
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    style="@style/attendance_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line"/>
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                tools:src="@color/__picker_gray_69"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

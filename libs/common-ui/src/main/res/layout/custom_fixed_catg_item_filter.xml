@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rootLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/next"
+            android:layout_toRightOf="@+id/check_null"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/black_4a"
+            android:textSize="14sp"
+            tools:text="对对对"/>
+
+        <ImageView
+            android:id="@+id/check_null"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="right|center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/icon_unselect"/>
+
+        <View
+            android:id="@id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/default_app_backgroud_color"/>
+    </RelativeLayout>
+
+</RelativeLayout>

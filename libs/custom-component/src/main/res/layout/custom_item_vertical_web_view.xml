@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:Tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_content"
+              style="@style/custom_widget_layout_style">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/custom_input_title_style"
+        Tools:text="富文本"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        style="@style/custom_widget_content_layout_style_row">
+
+        <RelativeLayout
+            android:id="@+id/rl_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp">
+
+            <com.hjhq.teamface.common.view.TextWebView
+                android:id="@+id/text_web_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"/>
+
+            <FrameLayout
+                android:id="@+id/fl_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:minHeight="30dp">
+
+                <TextView
+                    android:id="@+id/tv_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/loading"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

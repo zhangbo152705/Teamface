@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+
+              android:id="@+id/approve_layout"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:background="@drawable/project_task_list_bg"
+              android:orientation="vertical"
+              android:paddingBottom="12dp"
+              android:paddingEnd="10dp"
+              android:paddingStart="10dp"
+              android:paddingTop="12dp"
+              android:visibility="gone"
+              tools:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_approve"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/project_task_item_approve_icon"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/iv_approve">
+
+            <TextView
+                android:id="@+id/tv_approve_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/approve_corner_background_blue"
+                android:maxEms="6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10"
+                android:visibility="invisible"
+                tools:text="审批批中"
+                tools:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/iv_approve_head"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_approve_state"
+                android:layout_marginTop="3dp"
+                tools:src="@drawable/default_head_icon"/>
+
+            <TextView
+                android:id="@+id/tv_approve_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toLeftOf="@+id/tv_approve_state"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/title_bar_txt_color"
+                android:textSize="@dimen/text_size_14"
+                tools:text="最新的内容的更新申"/>
+
+            <TextView
+                android:id="@+id/tv_approve_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/iv_approve_head"
+                android:drawablePadding="5dp"
+                android:textColor="@color/gray_a0"
+                android:textSize="@dimen/text_size_12"
+                tools:text="申请时间：2017-10-16  18:06"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

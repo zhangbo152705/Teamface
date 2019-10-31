@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingLeft="10dp">
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/icon_uncheck_rec"/>
+
+    <TextView
+        android:id="@+id/tv_task_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/title_bar_txt_color"
+        android:textSize="@dimen/text_size_14"
+        tools:text="这里是任务这里是任务这里是任务这里是任务这里是任务这里是任务这里是任务这里是任务这里是任务这里是任务这里是任务"/>
+</LinearLayout>

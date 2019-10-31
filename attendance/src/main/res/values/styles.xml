@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="attendance_ll">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="attendance_left">
+        <item name="android:layout_marginLeft">@dimen/margin_border_size</item>
+        <item name="android:textColor">@color/_424242</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="attendance_right">
+        <item name="android:textColor">@color/black_22</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>

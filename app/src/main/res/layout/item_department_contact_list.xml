@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/item_conversation_list_root"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/folder_menu"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/rl_menu">
+
+        <ImageView
+            android:id="@+id/iv_conversation_avatar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_file"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/iv_conversation_avatar"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_department_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="middle"
+                android:lines="1"
+                android:maxWidth="220dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black_4a"
+                android:textSize="@dimen/conversation_object_name"
+                android:visibility="visible"
+                tools:text="张小发大水送fadffdafaaaaaaaaaa天"/>
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/gray_a0"
+                android:textSize="14sp"
+                android:visibility="visible"
+                tools:text="43人"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_bb"/>
+
+
+</RelativeLayout>

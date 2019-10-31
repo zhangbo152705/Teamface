@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Tools="http://schemas.android.com/tools"
+    style="@style/custom_widget_layout_style_v2">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        style="@style/custom_widget_layout_style"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/custom_input_title_row_style"
+            android:layout_gravity="left|top"
+            Tools:text="官方说法"/>
+
+        <RelativeLayout
+            android:id="@+id/ll_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_right"
+                android:hint="@string/please_select_hint"
+                android:textColor="@color/_999999"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_right"
+                android:minHeight="30dp"
+                android:visibility="gone"
+                Tools:visibility="visible">
+
+                <com.hjhq.teamface.common.view.FlowLayout
+                    android:id="@+id/pick_flow_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingEnd="@dimen/custom_content_start_end_padding"
+                    android:paddingStart="@dimen/custom_content_start_end_padding"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_right"
+                style="@style/custom_widget_icon_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_to_next"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/custom_widget_line_style"
+        android:layout_below="@+id/ll_content"/>
+</RelativeLayout>
+
+

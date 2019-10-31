@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="memo_main_menu_array">
+        <item>全部备忘</item>
+        <item>我创建的</item>
+        <item>共享给我</item>
+        <item>已删除</item>
+    </string-array>
+    <string-array name="memo_main_title_array">
+        <item>备忘录(全部)</item>
+        <item>备忘录(我的)</item>
+        <item>备忘录(共享)</item>
+        <item>备忘录(删除)</item>
+    </string-array>
+    <string-array name="memo_knowledge_main_menu_array">
+        <item>全部知识</item>
+        <item>我创建的</item>
+        <item>我部门的</item>
+        <item>我收藏的</item>
+        <item>邀我回答</item>
+    </string-array>
+    <string-array name="memo_knowledge_main_title_array">
+        <item>知识库(全部)</item>
+        <item>知识库(我的)</item>
+        <item>知识库(部门)</item>
+        <item>知识库(收藏)</item>
+        <item>知识库(邀我)</item>
+        <item>知识库</item>
+    </string-array>
+    <string-array name="memo_knowledge_update_study_state_array">
+        <item>如果你已经学习完该知识，请点击“确定”按钮，系统会将你的学习状态标记下来，以便管理员查询员工学习记录。</item>
+        <item>确认取消已学习状态吗?</item>
+    </string-array>
+    <string-array name="memo_knowledge_detail_menu_array1">
+        <item>版本管理</item>
+        <item>移动</item>
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="memo_knowledge_detail_menu_array0">
+        <item>版本管理</item>
+        <item>移动</item>
+        <item>编辑</item>
+        <item>删除</item>
+        <item>置顶答案</item>
+    </string-array>
+    <string-array name="memo_knowledge_detail_menu_array5">
+        <item>版本管理</item>
+        <item>移动</item>
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="memo_knowledge_detail_menu_array6">
+        <item>版本管理</item>
+    </string-array>
+    <string-array name="memo_knowledge_detail_menu_array2">
+        <item>移动</item>
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="memo_knowledge_detail_menu_array7">
+        <item>移动</item>
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="memo_knowledge_detail_menu_array3">
+        <item>置顶答案</item>
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="memo_knowledge_detail_menu_array4">
+        <item>置顶答案</item>
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+</resources>

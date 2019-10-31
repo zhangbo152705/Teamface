@@ -1,0 +1,16 @@
+auto generated, do not change !!!! 
+
+HOST : im
+
+聊天
+/chat
+
+选择群聊
+/choose_group
+
+选择要发送的对象
+/choose_member
+
+选择人员
+/choose_range_member
+

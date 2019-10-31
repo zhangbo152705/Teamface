@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/default_app_backgroud_color"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:duplicateParentState="true"
+        android:foreground="@drawable/project_card_view_selector"
+        android:paddingLeft="3dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/icon_shenpi"/>
+
+                <TextView
+                    android:id="@+id/widget_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="审批"
+                    android:textColor="#748692"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/add"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="8dp"
+                        android:src="@drawable/icon_widget_add"
+                        android:visibility="visible"/>
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="1.5dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/default_app_backgroud_color"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/open"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="8dp"
+                        android:src="@drawable/icon_arrow_down"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_expand"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#F6F7F8"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_receive"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:clipChildren="false">
+
+                        <View
+                            android:id="@+id/anchor1"
+                            android:layout_width="1px"
+                            android:layout_height="1px"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/transparent"/>
+
+                        <ImageView
+                            android:id="@+id/iv1"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/approve_catg2_unselect"/>
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv1"
+                            android:layout_centerHorizontal="true"
+                            android:text="待我审批"
+                            android:textSize="12dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_num1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_toRightOf="@+id/anchor1"
+                            android:gravity="center"
+                            android:minHeight="20dp"
+                            android:minWidth="20dp"
+                            android:padding="1dp"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:visibility="visible"
+                            tools:background="@drawable/im_unread_num_bg"
+                            tools:text="99+"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_send"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:clipChildren="false">
+
+                        <View
+                            android:id="@+id/anchor2"
+                            android:layout_width="1px"
+                            android:layout_height="1px"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/transparent"/>
+
+                        <ImageView
+                            android:id="@+id/iv2"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/approve_catg4_unselect"/>
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv2"
+                            android:layout_centerHorizontal="true"
+                            android:text="抄送到我"
+                            android:textSize="12dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_num2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_toRightOf="@+id/anchor2"
+                            android:gravity="center"
+                            android:minHeight="20dp"
+                            android:minWidth="20dp"
+                            android:padding="1dp"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:visibility="visible"
+                            tools:background="@drawable/im_unread_num_bg"
+                            tools:text="99+"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_draft"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:clipChildren="false">
+
+                        <View
+                            android:id="@+id/anchor3"
+                            android:layout_width="1px"
+                            android:layout_height="1px"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/transparent"/>
+
+                        <ImageView
+                            android:id="@+id/iv3"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/approve_catg1_unselect"/>
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv3"
+                            android:layout_centerHorizontal="true"
+                            android:text="我发起的"
+                            android:textSize="12dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_num3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_toRightOf="@+id/anchor3"
+                            android:gravity="center"
+                            android:minHeight="20dp"
+                            android:minWidth="20dp"
+                            android:padding="1dp"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:visibility="visible"
+                            tools:background="@drawable/im_unread_num_bg"
+                            tools:text="99+"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

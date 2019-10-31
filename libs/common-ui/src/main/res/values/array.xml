@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="knowledge_main_catg_array">
+        <item>全部知识</item>
+        <item>我创建的</item>
+        <item>我部门的</item>
+        <item>我收藏的</item>
+        <item>邀我回答</item>
+    </string-array>
+
+</resources>

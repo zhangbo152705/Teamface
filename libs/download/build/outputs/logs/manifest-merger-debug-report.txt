@@ -1,0 +1,47 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:1:1-11:12
+	package
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:2:11-47
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:1:1-11:12
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:1:1-11:12
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:4:5-9:19
+service#com.hjhq.teamface.download.service.DownloadService
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:5:9-8:38
+	android:enabled
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:7:13-35
+	android:exported
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:8:13-36
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml:6:13-52
+uses-sdk
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\download\src\main\AndroidManifest.xml

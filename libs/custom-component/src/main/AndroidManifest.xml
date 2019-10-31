@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+          package="com.hjhq.teamface.customcomponent">
+
+    <application>
+
+        <!-- 富文本 -->
+        <activity android:name=".widget2.web.RichTextEditActivity"/>
+        <activity android:name=".widget2.select.MultiGradeSelectActivity"/>
+        <activity android:name=".widget2.select.PickListViewSelectActivity"/>
+    </application>
+
+</manifest>

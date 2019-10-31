@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.hjhq.teamface.memo">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".MemoTestActivity">
+        </activity>
+        <activity android:name=".ui.MemoListActivity"/>
+        <!--新增备忘录-->
+        <activity android:name=".ui.AddMemoActivity"/>
+        <!--备忘录详情-->
+        <activity android:name=".ui.MemoDetailActivity"/>
+        <!--选择时间-->
+        <!--选择提醒时间和模式-->
+        <activity android:name=".ui.MemoRemindTimeAndModeActivity"/>
+        <!--选择关联-->
+        <activity android:name=".ui.ChooseRelevanceActivity"/>
+        <!--搜索备忘录-->
+        <activity android:name=".ui.SearchMemoActivity"/>
+        <!--搜索自定义数据-->
+        <activity android:name=".ui.SearchModuleDataActivity"/>
+        <!--选择备忘录-->
+        <activity android:name=".ui.ChooseMemoActivity"/>
+        <!--知识库列表-->
+        <activity android:name=".ui.KnowledgeListActivity"/>
+        <activity android:name=".ui.KnowledgeListActivityV2"/>
+        <!--知识库详情-->
+        <activity
+            android:name=".ui.KnowledgeDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"/>
+        <!--新增/编辑知识或提问-->
+        <activity android:name=".ui.AddKnowledgeActivity"/>
+        <!--搜索知识-->
+        <activity android:name=".ui.SearchKnowledgeActivity"/>
+        <!--选择知识分类-->
+        <activity android:name=".ui.ChooseCatgActivity"/>
+        <!--查看阅读/收藏/点赞/学习人数-->
+        <activity android:name=".ui.ViewMemberActivity"/>
+        <!--移动分类-->
+        <activity android:name=".ui.ChangeKnowledgeCatgActivity"/>
+        <!--知识版本-->
+        <activity android:name=".ui.ManageKnowledgeVersionActivity"/>
+    </application>
+
+</manifest>

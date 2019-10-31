@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/custom_widget_layout_style_v2">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:id="@+id/ll_content"
+                  style="@style/custom_widget_layout_style"
+                  android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/custom_input_title_row_style"
+            android:layout_gravity="center_vertical"
+            tools:text="fda fdfdfadffdf"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="35dp"
+            android:hint="请选择"
+            tools:text="请选择"
+            tools:visibility="visible"
+            android:textColorHint="@color/custom_hint_color"
+            android:textColor="@color/custom_content_color"/>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/custom_widget_line_style"
+        android:layout_below="@+id/ll_content"/>
+</RelativeLayout>

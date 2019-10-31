@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingBottom="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginsetting_title"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="@dimen/login_magin"
+            android:layout_marginRight="@dimen/login_magin"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="@dimen/login_magin"
+            android:layout_marginRight="@dimen/login_magin"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:id="@+id/more_ip_iv"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_to_more_down"
+                />
+            <ImageView
+                android:id="@+id/clear_ip_iv"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:padding="5dp"
+                android:layout_toLeftOf="@+id/more_ip_iv"
+                android:layout_centerVertical="true"
+                android:src="@drawable/clear_button"
+                android:visibility="visible"/>
+
+
+            <EditText
+                android:id="@+id/ip_et"
+                style="@style/loginsetting"
+                android:layout_toLeftOf="@+id/clear_ip_iv"
+                android:background="@null"
+                android:hint="@string/loginsetting_please_input_ip"
+                android:textSize="15sp"
+                android:textColor="@color/black_4a"
+                android:layout_centerVertical="true"
+                android:textColorHint="#666666"
+                android:text="http://app.mr-lai.top:8088"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ip_et"
+                android:background="@color/gray_bb"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/remenber_li"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/login_magin"
+            android:layout_marginRight="@dimen/login_magin">
+
+            <ImageView
+                android:id="@+id/check_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/project_icon_uncheck"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loginsetting_remenber_ip"
+                android:textColor="@color/black_4a"
+                android:layout_marginLeft="5dp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginsetting_input_example"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/login_magin"
+            android:layout_marginRight="@dimen/login_magin"/>
+
+        <Button
+            android:id="@+id/loginsetting_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="@dimen/login_magin"
+            android:layout_marginRight="@dimen/login_magin"
+            android:background="@drawable/splash_login_btn_white_tran3"
+            android:gravity="center"
+            android:text="@string/finish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

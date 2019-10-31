@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:3:11-40
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:5:11-36
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:4:11-34
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+application
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:7:5-8:19
+	android:allowBackup
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml:7:18-45
+uses-sdk
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\wheel-lib\src\main\AndroidManifest.xml

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_app_backgroud_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="考勤日期(格式为yyyy-MM-dd,当日0时0分0秒0毫秒)"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/et0"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_stroke_input_bg"
+                    android:lines="1"/>
+
+                <TextView
+                    android:id="@+id/tv_choose_date"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/blue_round_bg"
+                    android:gravity="center"
+                    android:text="选择"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="考勤组ID"/>
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_stroke_input_bg"
+                android:lines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="考勤条件判断方式(0定位1WiFi)"/>
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_stroke_input_bg"
+                android:lines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="考勤WiFi名称"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et3"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_stroke_input_bg"
+                    android:lines="1"/>
+
+                <TextView
+                    android:id="@+id/choose_wifi"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/blue_round_bg"
+                    android:gravity="center"
+                    android:text="选择"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="考勤定位地址"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et4"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_stroke_input_bg"
+                    android:lines="1"/>
+
+                <TextView
+                    android:id="@+id/tv_choose_address"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/blue_round_bg"
+                    android:gravity="center"
+                    android:text="选择"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打卡设备名称"/>
+
+            <EditText
+                android:id="@+id/et5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_stroke_input_bg"
+                android:lines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="班次(休息或无班次时此项为空)"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et6"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_stroke_input_bg"
+                    android:lines="1"/>
+
+                <TextView
+                    android:id="@+id/tv_choose_time"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/blue_round_bg"
+                    android:gravity="center"
+                    android:text="选择"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_clean_et6"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/blue_round_bg"
+                    android:gravity="center"
+                    android:text="清除"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/attendance_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打卡类型(1上班2下班)"/>
+
+            <EditText
+                android:id="@+id/et7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_stroke_input_bg"
+                android:lines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="是否是外勤(0是1不是)"/>
+
+            <EditText
+                android:id="@+id/et10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_stroke_input_bg"
+                android:lines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="照片链接"/>
+
+            <EditText
+                android:id="@+id/et8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_stroke_input_bg"
+                android:lines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="备注"/>
+
+            <EditText
+                android:id="@+id/et9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_stroke_input_bg"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:text="详情:"
+                android:textColor="@color/white"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

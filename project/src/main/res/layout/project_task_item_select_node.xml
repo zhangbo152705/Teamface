@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/project_navigation_selector"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/_424242"
+        android:textSize="@dimen/text_size_16"
+        tools:text="研发中心"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_select"/>
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/arrows_flex_selector"
+        android:layout_alignParentRight="true"/>
+
+
+
+</RelativeLayout>

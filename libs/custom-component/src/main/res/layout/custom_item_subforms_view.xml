@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:Tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_content"
+              style="@style/custom_widget_layout_style"
+              android:paddingEnd="0dp"
+              android:paddingStart="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/custom_input_title_style"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            Tools:text="子表单"/>
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/reference_scan"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/blue_round_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="插入"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:visibility="gone"
+            Tools:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/diy_bg"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        Tools:layout_marginLeft="10dp"
+        Tools:layout_marginRight="10dp"
+        Tools:minHeight="40dp"
+        Tools:padding="3dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_content_default_height"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_widget_dashed_border_bg"
+        android:gravity="center"
+        android:text="＋ 增加栏目"
+        android:textColor="@color/green_20"
+        android:textSize="14sp"/>
+
+</LinearLayout>

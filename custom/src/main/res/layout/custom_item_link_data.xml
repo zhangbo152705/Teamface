@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        tools:text="10月1日深圳VB酒庄0…元招代理商还送奥迪邀请您报名元招代理商还送奥迪邀请您报名"/>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_title"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="14dp"
+            tools:text="https://www.huijuhua/a1s2d3f"/>
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/copy"
+            android:textColor="@color/app_blue"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:paddingLeft="5dp"
+            android:text="@string/open"
+            android:textColor="@color/app_blue"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_qr_code"
+            tools:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/iv_barcode"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:background="@color/app_blue"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_expand"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/ll_content"
+        android:background="@color/item_bg_color"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_sort_down"
+            android:scaleType="center"/>
+
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv"
+            android:text="扩展链接"/>
+
+        <ImageView
+            android:id="@+id/iv_what"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/tv_action"
+            android:background="@drawable/icon_attention"
+            android:scaleType="center"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_expand"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:layout_below="@+id/rv_expand"
+        android:background="@color/line_color"/>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml:1:1-10:12
+	package
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml:2:11-42
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.FLASHLIGHT
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml:4:5-68
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml:4:22-66
+application
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml:5:5-8:19
+	android:allowBackup
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml:6:9-36
+uses-sdk
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\lib-zxing\src\main\AndroidManifest.xml

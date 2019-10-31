@@ -1,0 +1,207 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:1:1-82:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:1:1-82:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:1:1-82:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:1:1-82:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:1:1-82:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:1:1-82:12
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:1:1-82:12
+	package
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:3:11-41
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:1:1-82:12
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:2:11-57
+	android:versionCode
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:1:1-82:12
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:5:5-75
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:5:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:7:5-75
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:7:22-73
+uses-permission#android.permission.CHANGE_CONFIGURATION
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.INTERNET
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:11:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:14:22-65
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:16:5-84
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:16:22-82
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:20:5-80
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:20:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:22:5-78
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:22:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:25:5-80
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:25:22-78
+application
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:29:5-80:19
+	android:supportsRtl
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:31:9-35
+	android:allowBackup
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:30:9-36
+service#com.hjhq.teamface.im.IMService
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:33:9-46:19
+	tools:node
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:37:13-33
+	android:enabled
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:35:13-35
+	android:exported
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:34:13-38
+intent-filter#action:name:cn.hjhq.android.intent.LOGIN+action:name:cn.hjhq.android.intent.PUSH_MSG+action:name:cn.hjhq.android.intent.PushService+action:name:cn.hjhq.android.intent.REGISTER+action:name:cn.hjhq.android.intent.REPORT+action:name:cn.hjhq.android.intent.SEND_MSG
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:38:13-45:29
+action#cn.hjhq.android.intent.REGISTER
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:39:17-73
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:39:25-71
+action#cn.hjhq.android.intent.REPORT
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:40:17-71
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:40:25-69
+action#cn.hjhq.android.intent.PushService
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:41:17-76
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:41:25-74
+action#cn.hjhq.android.intent.LOGIN
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:42:17-70
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:42:25-68
+action#cn.hjhq.android.intent.SEND_MSG
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:43:17-73
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:43:25-71
+action#cn.hjhq.android.intent.PUSH_MSG
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:44:17-73
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:44:25-71
+activity#com.hjhq.teamface.im.activity.ChatActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:47:9-51:46
+	android:label
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:50:13-31
+	android:launchMode
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:51:13-44
+	android:description
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:49:13-55
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:48:13-50
+activity#com.hjhq.teamface.im.activity.ChatDetailActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:58:9-64
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:58:19-62
+activity#com.hjhq.teamface.im.activity.ChatFileActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:59:9-62
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:59:19-60
+activity#com.hjhq.teamface.im.activity.GroupChatDetailActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:60:9-69
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:60:19-67
+activity#com.hjhq.teamface.im.activity.SearchAssistantListActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:61:9-73
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:61:19-71
+activity#com.hjhq.teamface.im.activity.SearchChatActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:62:9-64
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:62:19-62
+activity#com.hjhq.teamface.im.activity.SearchChatActivityV2
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:63:9-66
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:63:19-64
+activity#com.hjhq.teamface.im.activity.SearchChatDetailActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:64:9-70
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:64:19-68
+activity#com.hjhq.teamface.im.activity.SearchConvChatActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:65:9-68
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:65:19-66
+activity#com.hjhq.teamface.im.activity.SearchGroupChatActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:66:9-69
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:66:19-67
+activity#com.hjhq.teamface.im.activity.AssistantListActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:67:9-67
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:67:19-65
+activity#com.hjhq.teamface.im.activity.AppAssistantActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:68:9-66
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:68:19-64
+activity#com.hjhq.teamface.im.activity.AppAssistantSettingActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:69:9-73
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:69:19-71
+activity#com.hjhq.teamface.im.activity.ChooseChatMemberActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:70:9-70
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:70:19-68
+activity#com.hjhq.teamface.im.activity.ChooseGroupChatActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:71:9-69
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:71:19-67
+activity#com.hjhq.teamface.im.activity.ChooseSendMemberActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:72:9-70
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:72:19-68
+activity#com.hjhq.teamface.im.activity.CreateGroupActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:73:9-65
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:73:19-63
+activity#com.hjhq.teamface.im.activity.GroupMemberActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:74:9-65
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:74:19-63
+activity#com.hjhq.teamface.im.activity.MessageReadStateActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:75:9-70
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:75:19-68
+activity#com.hjhq.teamface.im.activity.PersonalChatDetailActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:76:9-72
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:76:19-70
+activity#com.hjhq.teamface.im.activity.PositionManageActivity
+ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:77:9-68
+	android:name
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml:77:19-66
+uses-sdk
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+		ADDED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml
+		INJECTED from D:\jb_project\teamface_workspace\Teamface\libs\im\src\main\AndroidManifest.xml

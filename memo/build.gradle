@@ -1,0 +1,52 @@
+//apply plugin: 'com.android.library'
+apply plugin: 'com.dd.comgradle'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true//分包配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+                arguments = [host: "memo"]
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    resourcePrefix "memo_"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':common-ui')
+    api project(':download')
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api project(':base')
+    api 'com.android.support.constraint:constraint-layout:1.0.2'
+    annotationProcessor 'com.luojilab.ddcomponent:router-anno-compiler:1.0.0'
+    api project(':custom-component')
+}
+combuild {
+    applicationName = 'com.hjhq.teamface.memo.application.MemoApplication'
+    isRegisterCompoAuto = true
+}
+repositories {
+    mavenCentral()
+}

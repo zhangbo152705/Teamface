@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hjhq.teamface.im"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 后台唤醒定位需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 读取设置 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <!-- 需要运行时注册的权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 读取缓存数据 -->
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true" >
+        <service
+            android:name="com.hjhq.teamface.im.IMService"
+            android:enabled="true"
+            android:exported="false"
+            tools:node="replace" >
+            <intent-filter>
+                <action android:name="cn.hjhq.android.intent.REGISTER" />
+                <action android:name="cn.hjhq.android.intent.REPORT" />
+                <action android:name="cn.hjhq.android.intent.PushService" />
+                <action android:name="cn.hjhq.android.intent.LOGIN" />
+                <action android:name="cn.hjhq.android.intent.SEND_MSG" />
+                <action android:name="cn.hjhq.android.intent.PUSH_MSG" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.hjhq.teamface.im.activity.ChatActivity"
+            android:description="@string/team_message"
+            android:label="企信"
+            android:launchMode="singleTask" />
+        <!-- android:taskAffinity="com.hjhq.teamface.im" -->
+        <!-- android:taskAffinity="com.hjhq.teamface.chat" -->
+        <!-- android:taskAffinity="" -->
+        <!-- android:allowTaskReparenting="true" -->
+        <!-- android:launchMode="singleInstance" -->
+        <!-- android:excludeFromRecents="true" -->
+        <activity android:name="com.hjhq.teamface.im.activity.ChatDetailActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.ChatFileActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.GroupChatDetailActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.SearchAssistantListActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.SearchChatActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.SearchChatActivityV2" />
+        <activity android:name="com.hjhq.teamface.im.activity.SearchChatDetailActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.SearchConvChatActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.SearchGroupChatActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.AssistantListActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.AppAssistantActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.AppAssistantSettingActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.ChooseChatMemberActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.ChooseGroupChatActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.ChooseSendMemberActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.CreateGroupActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.GroupMemberActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.MessageReadStateActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.PersonalChatDetailActivity" />
+        <activity android:name="com.hjhq.teamface.im.activity.PositionManageActivity" />
+    </application>
+
+</manifest>

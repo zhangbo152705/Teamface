@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/memo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/project_task_list_bg"
+    android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    android:paddingTop="12dp"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_memo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/project_task_item_memo_icon"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_memo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/title_bar_txt_color"
+                android:textSize="@dimen/text_size_14"
+                tools:text="最新的内容的更新申请审批"/>
+
+            <TextView
+                android:id="@+id/tv_memo_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:lines="1"
+                android:textColor="@color/gray_a0"
+                android:textSize="@dimen/text_size_12"
+                tools:text="申请时间：2017-10-16  18:06"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_memo_head"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            tools:src="@drawable/default_head_icon"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/custom_widget_layout_style_v2">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        style="@style/custom_widget_layout_style"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/custom_input_title_row_style"
+            Tools:text="官方说法"/>
+
+        <LinearLayout
+            android:id="@+id/ll_select"
+            style="@style/custom_widget_content_layout_style_row"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/tv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/custom_select_content_style"
+                android:hint="@string/please_select_hint"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_flow_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="30dp"
+                android:visibility="gone">
+
+                <com.hjhq.teamface.common.view.FlowLayout
+                    android:id="@+id/pick_flow_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingEnd="@dimen/custom_content_start_end_padding"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/reference_scan"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_right"
+                style="@style/custom_widget_icon_style"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_to_next"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/custom_widget_line_style"
+        android:layout_below="@+id/ll_content"/>
+</RelativeLayout>
+
+

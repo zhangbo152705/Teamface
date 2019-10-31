@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_toolbar"
+        android:orientation="vertical">
+        <include layout="@layout/app_teammessage_toolbar_layout"/>
+        <include layout="@layout/header_team_message3" />
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:id="@+id/msg_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="20dp"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/ll_organization"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_organization"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@drawable/icon_organization"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:id="@+id/tv_organization"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="组织架构"
+                            android:textColor="@color/black_17"
+                            android:textSize="@dimen/text_size_16"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_department"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_department"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/icon_department" />
+
+                        <TextView
+                            android:id="@+id/tv_department"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我当前的部门"
+                            android:textColor="@color/black_17"
+                            android:textSize="@dimen/text_size_16"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_group"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_group"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@drawable/icon_normal_group"
+                            android:layout_gravity="center_horizontal"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_group"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的群聊"
+                            android:textColor="@color/black_17"
+                            android:textSize="@dimen/text_size_16"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--<include layout="@layout/contacts_organization" />
+
+                <include layout="@layout/line" />
+
+                <include layout="@layout/contacts_department" />
+
+                <include layout="@layout/line" />
+
+                <include layout="@layout/contacts_group_chat" />-->
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+
+                    <TextView
+                        android:id="@+id/text22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:lines="1"
+                        android:text="@string/recently_contacts"
+                        android:textColor="@color/gray_bb"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@string/clear_recently_contacts"
+                        android:textColor="@color/red"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/lv_contacts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

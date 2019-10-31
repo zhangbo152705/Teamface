@@ -1,0 +1,34 @@
+auto generated, do not change !!!! 
+
+HOST : memo
+
+新增/编辑知识/提问
+/add_knowledge
+
+新增备忘录
+/add
+
+修改知识分类
+/change_knowledge_catg
+
+选择备忘录
+/choose_memo
+
+知识库详情
+/knowledge_detail
+
+知识库列表
+/konwledge_main
+
+知识库列表
+/konwledge_main2
+
+知识版本
+/manage_knowledge_version
+
+备忘录详情
+/detail
+
+备忘录列表
+/main
+

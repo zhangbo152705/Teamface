@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/title_li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:padding="15dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/project_task_delete_re"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/project_task_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/project_task_delete"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/project_task_delete"
+                android:layout_centerVertical="true"
+                android:text="@string/project_task_delete"
+                android:layout_marginLeft="5dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/project_task_edit_re"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/project_task_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/project_task_edit"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/project_task_edit"
+                android:layout_centerVertical="true"
+                android:text="@string/project_task_edit"
+                android:layout_marginLeft="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/project_task_classify_re"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/project_task_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/project_task_classify"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/task_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/project_task_classify"
+                android:layout_centerVertical="true"
+                android:text="@string/project_task_classify"
+                android:layout_marginLeft="5dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/project_task_sub_re"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/project_task_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/project_task_sub"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/task_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/project_task_sub"
+                android:layout_centerVertical="true"
+                android:text="@string/project_task_sub"
+                android:layout_marginLeft="5dp"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_project_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_li">
+
+        <com.tencent.smtt.sdk.WebView
+            android:id="@+id/wv_task_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--<com.hjhq.teamface.common.view.TextWebView
+            android:id="@+id/wv_task_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp"
+            android:background="@color/red"/>-->
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tv_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/project_task_close"
+        />
+
+</RelativeLayout>

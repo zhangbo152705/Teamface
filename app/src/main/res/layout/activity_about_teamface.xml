@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/re_app_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_4a"
+            android:text="Teamface"
+            android:layout_below="@+id/app_logo"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_99"
+            android:text="1.1.0"
+            android:layout_below="@+id/app_name"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_score"
+        style="@style/settingItemLL"
+        android:layout_below="@+id/re_app_message"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            style="@style/settingItemLeftTv"
+            android:text="@string/app_about_score"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView style="@style/newItemRightIv"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_update_version"
+        style="@style/settingItemLL"
+        android:layout_below="@+id/ll_score"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            style="@style/settingItemLeftTv"
+            android:text="@string/app_about_updae"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView style="@style/newItemRightIv"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/app_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teams_of_service"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/app_blue"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/app_teams_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teams_of_version"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/gray_bb"/>
+        <TextView
+            android:id="@+id/app_version_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teams_of_version_time"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp"
+            android:textColor="@color/gray_bb"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

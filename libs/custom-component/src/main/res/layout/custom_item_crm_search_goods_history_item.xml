@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rootLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/search_bar_bg">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingRight="24dp"
+            android:textColor="@color/gray_69"
+            android:textSize="14dp"
+            tools:text="对对对"/>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignEnd="@+id/name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"
+            android:src="@drawable/delete_upload"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

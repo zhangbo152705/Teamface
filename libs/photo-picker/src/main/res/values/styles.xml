@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="__picker_actionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/__picker_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/__picker_colorPrimaryDark</item>
+        <item name="colorAccent">@color/__picker_colorAccent</item>
+        <item name="android:windowBackground">@color/__picker_gray_f2</item>
+        <item name="actionMenuTextColor">@color/__picker_gray_69</item>
+        <item name="android:actionMenuTextColor">@color/__picker_gray_69</item>
+    </style>
+
+</resources>

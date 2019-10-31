@@ -1,0 +1,305 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/fl_root"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/fl_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:background="@color/transparent">
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="@dimen/login_magin"
+        android:paddingStart="@dimen/login_magin"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/splash_login_btn_white_tran3"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:transitionName="loginButton"
+            android:visibility="visible"
+            tools:visibility="visible"/>
+
+
+        <Button
+            android:id="@+id/reg_btn"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/login_btn"
+            android:layout_alignBottom="@+id/login_btn"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/login_btn_selector_white_tran2"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/ll_input_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            tools:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rl_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_region"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/tv_region"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="3dp"
+                        android:text="+86"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"/>
+
+                    <View
+                        android:id="@+id/line_vertical1"
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/tv_region"
+                        android:background="@color/gray_bb"/>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/phone_et"
+                    style="@style/loginUIEt"
+                    android:layout_toLeftOf="@+id/clear_phone_iv"
+                    android:layout_toRightOf="@+id/rl_region"
+                    android:background="@null"
+                    android:drawablePadding="32dp"
+                    android:hint="@string/login_please_input_phonenumber"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="30dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:textCursorDrawable="@drawable/login_input_cursor"
+                    tools:text="123456"/>
+
+                <ImageView
+                    android:id="@+id/clear_phone_iv"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:maxLength="20"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:src="@drawable/clear_button"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_bb"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_pwd"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="3dp"
+                    android:text="密码"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/pwd_et"
+                    style="@style/loginUIEt"
+                    android:layout_toRightOf="@+id/tv_pwd"
+                    android:background="@null"
+                    android:hint="@string/login_please_input_login_pwd"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="30dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:textCursorDrawable="@drawable/login_input_cursor"
+                    tools:text="123456"/>
+
+                <ImageView
+                    android:id="@+id/show_pwd_select_iv"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:maxLength="20"
+                    android:src="@drawable/login_show_pwd_no"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_bb"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_verify"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_verify"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="3dp"
+                    android:text="验证"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/verify_et"
+                    style="@style/loginUIEt"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/tv_verify"
+                    android:background="@null"
+                    android:drawablePadding="32dp"
+                    android:hint="@string/login_please_input_login_verify"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:paddingBottom="3dp"
+                    android:paddingEnd="30dp"
+                    android:textColor="#666666"
+                    android:textCursorDrawable="@drawable/login_input_cursor"
+                    tools:text="123456"/>
+
+                <com.hjhq.teamface.login.view.verify.CountDownButton
+                    android:id="@+id/timmer_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:text="@string/login_get_verification_code"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_blue"
+                    app:login_countDown="0"
+                    app:login_countDownFormat="%ds 重新发送验证码"
+                    app:login_countDownInterval="1000"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_bb"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_register"
+                    android:textColor="#F17200"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/tv_froget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/login_forget_pwd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/splash_login_btn_white_tran3"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_size_16"
+                android:transitionName="login_btn"
+                android:visibility="invisible"
+                tools:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="@string/login_open_new_data_manage"
+                android:textColor="#666666"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/login_logo_v2"
+            android:visibility="visible"
+            tools:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/login_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/login_setting"/>
+    </RelativeLayout>
+
+
+</FrameLayout>
